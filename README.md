@@ -17,7 +17,7 @@
   </form>
   
   <script src="script.js">
-document.getElementById('myForm').addEventListener('submit', function(event) {
+#document.getElementById('myForm').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent form from submitting and page refreshing
   
   // Get the email and message values from the form inputs

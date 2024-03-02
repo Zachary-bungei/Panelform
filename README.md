@@ -13,7 +13,7 @@
     <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea>
     <br>
-    <button type="submit">Submit</button>
+    <button type="submit" onclick="sendEmail">Submit</button>
   </form>
   
   <script src="script.js">

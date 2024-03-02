@@ -21,11 +21,11 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent form from submitting and page refreshing
   
   // Get the email and message values from the form inputs
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+  let email = document.getElementById('email').value;
+  let message = document.getElementById('message').value;
   
   // Send the email and message to the specified recipient
-  var recipient = 'Zacharia.chemoiwyo@mpesafoundationacademy.ac.ke';
+ let recipient = 'Zacharia.chemoiwyo@mpesafoundationacademy.ac.ke';
   sendEmail(email, recipient, message);
   
   // Clear the form
@@ -35,7 +35,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 function sendEmail(email, recipient, message) {
   // You can implement your own logic here to send the email to the recipient
   // For demonstration purposes, we'll just log the email and message to the console
-  console.log('Email sent to ' + recipient + ' from ' + email + ': ' + message);
+  window.alert('Email sent to ' + recipient + ' from ' + email + ': ' + message);
 }
 </script>
 </body>

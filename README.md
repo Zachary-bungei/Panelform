@@ -8,30 +8,34 @@
   
   <form id="myForm">
     <label for="email">Email:</label>
-    <textarea id="email" name="email"></textarea>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
     <br>
     <button type="submit">Submit</button>
   </form>
   
-  <script>
+  <script src="script.js">
 document.getElementById('myForm').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent form from submitting and page refreshing
   
-  // Get the email value from the textarea
+  // Get the email and message values from the form inputs
   var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
   
-  // Send the email to the specified recipient
+  // Send the email and message to the specified recipient
   var recipient = 'Zacharia.chemoiwyo@mpesafoundationacademy.ac.ke';
-  sendEmail(email, recipient);
+  sendEmail(email, recipient, message);
   
   // Clear the form
   document.getElementById('myForm').reset();
 });
 
-function sendEmail(email, recipient) {
+function sendEmail(email, recipient, message) {
   // You can implement your own logic here to send the email to the recipient
-  // For demonstration purposes, we'll just log the email to the console
-  console.log('Email sent to ' + recipient + ': ' + email);
+  // For demonstration purposes, we'll just log the email and message to the console
+  console.log('Email sent to ' + recipient + ' from ' + email + ': ' + message);
 }
 </script>
 </body>

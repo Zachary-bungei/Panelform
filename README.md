@@ -17,7 +17,7 @@
   </form>
   
   <script src="script.js">
-#document.getElementById('myForm').addEventListener('submit', function(event) {
+document.getElementById('myForm').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent form from submitting and page refreshing
   
   // Get the email and message values from the form inputs
@@ -35,7 +35,7 @@
 function sendEmail(email, recipient, message) {
   // You can implement your own logic here to send the email to the recipient
   // For demonstration purposes, we'll just log the email and message to the console
-  window.alert('Email sent to ' + recipient + ' from ' + email + ': ' + message);
+  alert('Email sent to ' + recipient + ' from ' + email + ': ' + message);
 }
 </script>
 </body>
